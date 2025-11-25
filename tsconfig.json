@@ -1,0 +1,42 @@
+```json
+{
+  "compilerOptions": {
+    // إعدادات البيئة المستهدفة
+    "target": "ES2020", // تحديد إصدار ECMAScript المستهدف
+    "useDefineForClassFields": true, // استخدام Object.defineProperty لتهيئة حقول الفئة
+
+    // إعدادات الوحدات (Modules)
+    "module": "ESNext", // تحديد نظام الوحدات (ES Modules)
+    "moduleResolution": "bundler", // استخدام استراتيجية حل الوحدات الخاصة بالمجمّع (Vite)
+    "resolveJsonModule": true, // السماح باستيراد ملفات JSON
+
+    // إعدادات JSX
+    "jsx": "react-jsx", // دعم JSX باستخدام تحويل React الجديد (بدون الحاجة لاستيراد React)
+
+    // إعدادات التحقق من النوع (Type Checking)
+    "strict": true, // تفعيل جميع خيارات التحقق الصارمة من النوع
+    "noUnusedLocals": true, // الإبلاغ عن المتغيرات المحلية غير المستخدمة
+    "noUnusedParameters": true, // الإبلاغ عن معلمات الدالة غير المستخدمة
+    "noFallthroughCasesInSwitch": true, // الإبلاغ عن حالات switch التي لا تحتوي على break
+
+    // إعدادات الإخراج
+    "outDir": "./dist", // دليل الإخراج (عادةً ما يتم التعامل معه بواسطة Vite)
+    "rootDir": "./src", // دليل الجذر للملفات المصدر
+
+    // إعدادات مساعدة
+    "skipLibCheck": true, // تخطي التحقق من النوع لملفات التعريف في node_modules
+    "esModuleInterop": true, // تفعيل التوافقية بين وحدات ES ووحدات CommonJS
+    "forceConsistentCasingInFileNames": true, // فرض اتساق حالة الأحرف في أسماء الملفات
+    "lib": ["ES2020", "DOM", "DOM.Iterable"] // تحديد مكتبات البيئة المتاحة
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.jsx"], // الملفات التي يجب تضمينها في عملية التحويل
+  "exclude": ["node_modules"] // الملفات التي يجب استثناؤها
+}
+```
+
+**ملاحظة:** تم إنشاء الملفات الثلاثة المطلوبة:
+1.  `.env.example`
+2.  `tsconfig.json`
+3.  `vite.config.ts`
+
+وتم تقديم محتوى ملف `tsconfig.json` كإخراج للمهمة.

@@ -1,0 +1,95 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.pnp.cjs
+
+# Testing
+/coverage
+
+# Production build output
+/dist
+/build
+/out
+/es
+/lib
+/tmp
+
+# TypeScript cache
+/.tsbuildinfo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS and IDE files
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.vscode/
+.idea/
+.history/
+*.sublime-workspace
+*.sublime-project
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache files
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn V2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.yarn/virtual
+.yarn/plugins
+.yarn/releases
+.yarn/sdks
+.yarn/versions
+
+# Next.js / Gatsby / other frameworks
+.next/
+.cache/
+public/build
+out/
+
+# Compiled JavaScript files (if not in a dedicated build folder)
+*.js
+!*.config.js
+!*.setup.js
+!*.test.js
+!*.spec.js
+!*.d.ts
+
+# Source Map files
+*.map
+
+# Database files
+*.sqlite
+*.sqlite-journal
+
+# Uploads
+/uploads
+
+# Misc
+.nyc_output
+.eslintcache
+.stylelintcache
+.serverless/
+.terraform/
+.terraform.lock.hcl
