@@ -1,0 +1,68 @@
+client/
+└── src/
+    ├── App.tsx
+    ├── index.tsx
+    ├── components/
+    │   └── index.ts
+    ├── pages/
+    │   └── index.ts
+    ├── hooks/
+    │   └── index.ts
+    ├── utils/
+    │   └── index.ts
+    └── types/
+        └── index.d.ts
+
+محتوى الملفات المقترحة:
+
+1. client/src/App.tsx:
+// App.tsx
+import React from 'react from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HomePage } from './pages';
+
+const App: React.FC = () => {
+  return (
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          {/* أضف مسارات أخرى هنا */}
+        </Routes>
+      </div>
+    </Router>
+  );
+};
+
+export default App;
+
+2. client/src/index.tsx:
+// index.tsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+// استيراد ملفات الأنماط العامة هنا إذا لزم الأمر
+
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+3. client/src/pages/index.ts:
+// index.ts
+export * from './HomePage'; // مثال: يجب إنشاء ملف HomePage.tsx لاحقاً
+
+4. client/src/types/index.d.ts:
+// index.d.ts
+// تعريفات الأنواع العامة للمشروع
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+}
+
+// أضف أنواع أخرى هنا
